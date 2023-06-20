@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Upload de Fotos</title>
+</head>
+<body>
+  <h1>Upload de Fotos</h1>
+  <form action="/update" method="POST" enctype="multipart/form-data">
+    <input type="file" name="photo" accept="image/*" capture>
+    <button type="submit">Enviar</button>
+  </form>
+  <hr>
+  <h2>Fotos Carregadas</h2>
+  <iframe src="/photos" style="width: 100%; height: 500px;"></iframe>
+</body>
+</html>
